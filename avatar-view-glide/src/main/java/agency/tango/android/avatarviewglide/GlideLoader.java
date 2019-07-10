@@ -23,7 +23,6 @@ public class GlideLoader extends ImageLoaderBase {
     public void loadImage(@NonNull AvatarView avatarView, @NonNull AvatarPlaceholder avatarPlaceholder, @NonNull String avatarUrl) {
         Glide.with(avatarView.getContext())
                 .load(avatarUrl)
-                .crossFade()
                 .placeholder(avatarPlaceholder)
                 .fitCenter()
                 .into(avatarView);
